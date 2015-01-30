@@ -1,0 +1,10 @@
+#!/bin/sh
+
+[ $# -ne 1 ] && exec echo "$0 AppName"
+
+AppName=$1
+APPNAME=$(echo $1 |tr [a-z] [A-Z])
+appname=$(echo $1 |tr [A-Z] [a-z])
+
+sed -i -e "s/Template/$AppName/g" -e "s/TEMPLATE/$APPNAME/g" -e "s/template/$appname/g" main.cpp template.cpp template.h template.pro template.qrc template.rc templatewidget.ui
+rename "s/template/$appname/" template*
