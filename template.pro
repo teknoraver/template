@@ -5,5 +5,5 @@ RESOURCES += template.qrc
 TEMPLATE = app
 CONFIG += release warn_on thread qt
 TARGET = template
-QT += network
+QT += widgets
 RC_FILE = template.rc
