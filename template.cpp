@@ -15,5 +15,5 @@ Template::~Template()
 
 void Template::about()
 {
-        QMessageBox::about(this, "About Template", "Template - a Qt Template application<br>by Matteo Croce <a href=\"http://teknoraver.net/\">http://teknoraver.net/</a>");
+	QMessageBox::about(this, "About Template", "Template - a Qt Template application<br>by Matteo Croce <a href=\"http://teknoraver.net/\">http://teknoraver.net/</a>");
 }
