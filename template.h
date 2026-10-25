@@ -9,7 +9,7 @@ class Template: public QMainWindow, private Ui::MainWindow
 {
 	Q_OBJECT
 public:
-	Template();
+	explicit Template(QWidget *parent = nullptr);
 	~Template();
 private slots:
 	void about();

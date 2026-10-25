@@ -2,11 +2,11 @@
 
 #include "template.h"
 
-Template::Template() : QMainWindow(0)
+Template::Template(QWidget *parent) : QMainWindow(parent)
 {
 	setupUi(this);
-	connect(actionAbout, SIGNAL(triggered()), SLOT(about()));
-	connect(actionAbout_Qt, SIGNAL(triggered()), QCoreApplication::instance(), SLOT(aboutQt()));
+	connect(actionAbout, &QAction::triggered, this, &Template::about);
+	connect(actionAbout_Qt, &QAction::triggered, qApp, &QApplication::aboutQt);
 }
 
 Template::~Template()

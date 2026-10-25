@@ -1,9 +1,0 @@
-FORMS += templatewidget.ui
-HEADERS += template.h
-SOURCES += template.cpp main.cpp
-RESOURCES += template.qrc
-TEMPLATE = app
-CONFIG += release warn_on thread qt
-TARGET = template
-QT += widgets
-RC_FILE = template.rc
