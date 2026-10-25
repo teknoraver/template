@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+
 #ifndef TEMPLATE_H
 #define TEMPLATE_H
 

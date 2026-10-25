@@ -1,5 +1,7 @@
 #!/bin/sh
 
+# SPDX-License-Identifier: GPL-3.0-or-later
+
 [ $# -ne 1 ] && exec echo "$0 AppName"
 
 AppName=$1
